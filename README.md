@@ -1,42 +1,42 @@
-#  Fury Friends Sales Analysis
+# Profitability Analysis & Interactive Dashboard — Pet Retail (UK)
 
-This project explores and analyzes sales data from **Fury Friends**, a pet store chain.  
-The main goal is to understand **profitability patterns**, **store performance**, and **pet popularity**, using Python and popular data visualization libraries. 
+Sales and profitability analysis for **Fury Friends**, a UK pet store chain, identifying which stores, pet categories, and time periods drive the most profit.
 
----
+## Key Insight
 
-##  Project Overview
+**Dudley** was the most profitable store, generating **€692,497.43** in total profit — with cats and dogs as the leading profit contributors across all locations.
 
-1. **Data Loading & Cleaning**
-   - Loaded the dataset from Excel (`Fury_Friends data set_4376.xlsx`).  
-   - Checked data types, missing values, duplicates, and basic statistics.  
-   - Filled missing numerical values with **mean values**.  
-   - Removed duplicate rows.  
-   - Converted categorical columns (`Pet` and `Area`) to proper **category types**.  
-   - Saved a cleaned version of the dataset.
+## What I Did
 
-2. **Exploratory Data Analysis (EDA)**
-   - **Profit by Store Area & Pet Type**: Bar charts show which pets generate the most profit in each store.  
-   - **Total Profit per Store**: Highlighted the most profitable store.  
-   - **Cost, Revenue, and Profit Trends by Store**: Line plots visualize the three metrics side by side.  
-   - **Monthly Profit Trends**: Interactive Plotly line chart to track monthly profit.  
-   - **Profit Distribution by Pet Type**: Pie chart shows each pet’s contribution to total profit.  
-   - **Units Sold vs Profit**: Scatter plots reveal the relationship between sales volume and profit.  
-   - **Heatmap of Profit by Area & Pet**: Quickly see which combinations of store and pet are most profitable.
+1. **Data Cleaning**
+   - Loaded and cleaned the raw sales dataset (missing values, duplicates, data types)
+   - Filled missing numerical values with mean imputation
+   - Converted categorical columns (`Pet`, `Area`) to proper category types
 
-3. **Insights & Highlights**
-   - **Most profitable store:** Dudley with €692,497.43 in total profit.  
-   - Cats and dogs are the leading contributors to overall profit.  
-   - Monthly trends highlight seasonal fluctuations in sales.  
-   - The relationship between units sold and profit varies by pet type, revealing sales efficiency differences.
+2. **Exploratory Analysis**
+   - Profit by store area & pet type
+   - Total profit per store (identifying the top performer)
+   - Cost, revenue, and profit trends by store
+   - Monthly profit trends (interactive Plotly chart)
+   - Profit distribution by pet type
+   - Units sold vs. profit (sales efficiency by pet category)
+   - Heatmap of profit by area & pet combination
 
----
+3. **Key Findings**
+   - Dudley generated the highest total profit at €692,497.43
+   - Cats and dogs are the leading contributors to overall profit
+   - Monthly trends reveal seasonal fluctuations in sales
+   - Units sold vs. profit relationship varies by pet type, exposing sales efficiency gaps between categories
 
-##  Tools & Libraries
-- **Python** 
-- **Pandas & NumPy** (data manipulation)  
-- **Matplotlib & Seaborn** (2D visualizations)  
-- **Plotly Express** (interactive plots)  
+## How to Run
 
----
+```bash
+pip install pandas numpy matplotlib seaborn plotly openpyxl
+jupyter notebook "Profitability Analysis and Interactive Dashboard for Pet Retail Stores in the UK.ipynb"
+```
 
+The dataset (`Fury_Friends data set_4376.xlsx`) is included in the repo.
+
+## Tools
+
+Python · Pandas · NumPy · Matplotlib · Seaborn · Plotly Express
